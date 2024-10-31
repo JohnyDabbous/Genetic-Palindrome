@@ -101,20 +101,3 @@ DblList<char> dnaSeq::subString(int startingS, int endingE){
         return sub;
     }
 }
-
-std::string dnaSeq::toString(){
-    std::string s = "";
-    for (int i = 0; i < curSeq.size(); ++i){
-        s += curSeq.get(i);
-        s += "\n";
-    }
-    s += "Complement";
-    s += "\n";
-    if (compSeq.size() > 0){
-        for (int i = 0; i < compSeq.size(); ++i){
-            s += compSeq.get(i);
-            s += "\n";
-        }
-    }
-    return s;
-}
