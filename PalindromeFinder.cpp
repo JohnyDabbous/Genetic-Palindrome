@@ -65,7 +65,7 @@ std::string PalindromeFinder::determinePalindrome(){
                 int j = 0;
                 int k = other.size() - 2; //2 because we already checked the whole string
                 //loops until it reaches all substrings of the word that are greater than or equal to 4
-                while ((k - j) >= 4){
+                while ((k - j) > 4){
                     std::string joinedString = joinWord(other, j, k);
                     DNA.subString(j, k);
                     DNA.complement();
@@ -98,7 +98,7 @@ std::string PalindromeFinder::determinePalindrome(){
                 int j = 0;
                 int k = other.size() - 2; //2 because we already checked the whole string
                 //loops until it reaches all substrings of the word that are greater than or equal to 4
-                while ((k - j) >= 4){
+                while ((k - j) > 4){
                     std::string joinedString = joinWord(other, j, k);
                     DNA.subString(j, k);
                     DNA.complement();
